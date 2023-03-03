@@ -18,12 +18,16 @@ public class PigLatin {
      */
     public String returnPigLatin(String in){
         //if we want to break it down with a loop so
-        /*StringBuilder pigLatin = new StringBuilder("");
+        StringBuilder pigLatin = new StringBuilder("");
         for (int index = 1; index < in.length(); ++index) {
             pigLatin.append(in.charAt(index));
         }
 
-        return pigLatin.toString();*/
-        return in.substring(1, in.length()) + in.charAt(0) + "ay";
+        pigLatin.append(in.charAt(0));
+        pigLatin.append("ay");
+
+        return pigLatin.toString();
+
+        //return in.substring(1, in.length()) + in.charAt(0) + "ay";
     }
 }
